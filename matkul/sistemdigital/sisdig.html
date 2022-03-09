@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Akademik Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="color.css">
+    <link rel="shortcut icon" href="images/sam.png">
+</head>
+
+<body>
+
+    <script src="main.js"></script>
+    <script>
+        function Clicker(){
+            alert("Website ini dibuat oleh Ahmad Asyhari");
+        }
+    </script>
+</body>
+    <marquee bgcolor="green" scrollamount="7">Selamat Datang di Sistem Akademik Mahasiswa! Jangan lupa mencuci tangan dan selalu menjaga kesehatan!</marquee>
+    <br>
+    <br>
+    <hr>
+    <script> document.write("<h2><center>Nilai Mahasiswa untuk Mata Kuliah "+ mataKuliah +"</h2>");</script>
+    <hr>
+    <script>
+        document.write("<h4><center>Nama          : " + nama +"</h4>");
+        document.write("<h4><center>NIM           : " + nim +"</h4>");
+        document.write("<h4><center>Program Studi : " + prodi +"</h4>");
+        document.write("<h4><center>Nilai Angka   : " + nilaiAngka +"</h4>");
+        document.write("<h4><center>Nilai Huruf   : " + nilaiHuruf +"</h4>");
+        document.write("<h4><center>Predikat      : " + predikat +"</h4>");
+    </script>
+    <center>
+    <button onclick="kembali()"> Kembali ke Awal </button>
+    <script>
+        function kembali() {
+            var yakin = confirm("Apakah kamu yakin akan kembali ke awal?");
+            if (yakin) {
+                window.history.back();
+            } else {
+            }
+        }
+    </script>
+    <button class="btn2" onclick="Clicker()"> Pembuat Website Ini</button>
+</html>

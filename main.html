@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Akademik Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="color.css">
+    <link rel="shortcut icon" href="images/sak.png">
+
+</head>
+
+<body>
+    <marquee bgcolor="green" scrollamount="7">Selamat Datang di Sistem Akademik Mahasiswa! Jangan lupa mencuci tangan dan selalu menjaga kesehatan! Pakai masker saat berpergian dan jangan berkerumun di tempat keramaian</marquee>
+    <br>
+    <br>
+    <script>
+        //var nama = prompt("Input nama terlebih dahulu!");
+        //var nim = prompt("Input nim terlebih dahulu!");
+        document.write("<h1><center>Selamat Datang!<center></h1>");
+        document.write("<h3><center>Nama : "+ "Ahmad Asyhari" +"<center></h3>");
+        document.write("<h3><center>NIM : "+ "202011420036" +"<center></h3>");
+    </script>
+    <script language="JavaScript">
+        var tanggallengkap = new String();
+        var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+        namahari = namahari.split(" ");
+        var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+        namabulan = namabulan.split(" ");
+        var tgl = new Date();
+        var hari = tgl.getDay();
+        var tanggal = tgl.getDate();
+        var bulan = tgl.getMonth();
+        var tahun = tgl.getFullYear();
+        tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+    </script>
+    <center><script language='JavaScript'>document.write("Waktu Saat Ini : " + tanggallengkap);</script></center>
+    <br>
+    <br>
+    <h2><center>[ Pilih Mata Kuliah ]</center></h2>
+    <p>
+    <center><a href="matkul/basisdata/bsdata.html"><button>Basis Data</button></a></center>
+    <p>
+    <center><a href="matkul/matematikadiskrit/mtkdiskrit.html"><button>Matematika Diskrit</button></a></center>
+    <p>
+    <center><a href="matkul/pemogramanweb/pweb.html"><button>Pemograman Web</button></a></center>
+    <p>
+    <center><a href="matkul/sistemdigital/sisdig.html"><button>Sistem Digital</button></a></center>
+    </p>
+    <br>
+    <br>
+    <h4><center>Sistem Akademik Mahasiswa</center></h4>
+    <h4><center>© Ahmad Asyhari</center></h4>
+    <br>
+</div>
+</body>
+</html>
